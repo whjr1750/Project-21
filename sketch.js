@@ -38,7 +38,7 @@ function setup() {
 }
 
 function draw() {
-  box = Math.round(random(1, 2))
+  box = Math.round(random(1, 2)) //added this
   //codes for gamestate = PLAY
   if (gameState === PLAY) {
 
@@ -81,6 +81,7 @@ function draw() {
 
 function createBox() {
   console.log("executed")
+  //removed world framcount if condition
   box = createSprite(random(0,windowWidth / 2), 1, 10, 10);
   box.addImage(boxImage);
   box.scale = 0.1
